@@ -1,16 +1,13 @@
 import React from 'react';
 import Layout from '@/components/layouts/Layout';
-// 1. Import the useCount hook (no need for CountContext.Consumer)
 import { useCount } from '@/context/CountContext';
 import Header from '@/components/layouts/Header';
 
 export default function CounterPage() {
-  // 2. Call the hook to get the state and functions
   const { count, increment, decrement } = useCount();
 
   return (
     <Layout>
-      {/* The Header is inside Layout and will also get the count */}
       <Header/>
       <br />
       <br />
@@ -36,19 +33,3 @@ export default function CounterPage() {
   );
 }
 
-// In your main App file (_app.tsx), you wrap everything in the provider
-// This is a simplified example of how your _app.tsx should look
-/*
-import { CountProvider } from '@/context/CountContext';
-import type { AppProps } from 'next/app';
-
-function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <CountProvider>
-      <Component {...pageProps} />
-    </CountProvider>
-  );
-}
-
-export default MyApp;
-*/

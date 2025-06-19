@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from '@/pages/components/layout/Layout';
+import Layout from '@/pages/components/layouts/Layout';
 // 1. Import the useCount hook (no need for CountContext.Consumer)
 import { useCount } from '@/context/CountContext';
-import Header from '@/pages/components/layout/Header';
+import Header from '@/pages/components/layouts/Header';
 
 export default function CounterPage() {
   // 2. Call the hook to get the state and functions

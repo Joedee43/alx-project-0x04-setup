@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
-import Counter from "../pages/counter-app";
+import Counter from "./counter-app";
 
 
 export default function Home() {

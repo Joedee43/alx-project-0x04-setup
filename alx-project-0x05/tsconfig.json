@@ -13,8 +13,12 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": ".", // Set baseUrl to the root of the project
     "paths": {
-      "@/*": ["./*"]
+      "@/components/*": ["components/*"],
+      "@/layouts/*": ["layouts/*"],
+      "@/context/*": ["context/*"],
+      "@/styles/*": ["styles/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

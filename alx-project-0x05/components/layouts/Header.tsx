@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCount } from "@/context/CountContext";
-import Button from "../common/Button";
+import Button from "../../common/Button";
 
 const Header: React.FC = () => {
   const pathname = usePathname();
